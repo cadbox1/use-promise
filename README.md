@@ -77,5 +77,5 @@ yarn build-watch
 Deploy to npm
 
 ```
-yarn version-minor
+npm run version-minor
 ```
