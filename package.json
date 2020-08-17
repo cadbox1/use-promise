@@ -1,8 +1,9 @@
 {
   "name": "@cadbox1/use-promise",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "license": "MIT",
   "private": false,
+  "repository": "github:cadbox1/use-promise",
   "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/index.module.js",
