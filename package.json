@@ -1,6 +1,6 @@
 {
   "name": "@cadbox1/use-promise",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "license": "MIT",
   "private": false,
   "source": "src/index.ts",
@@ -41,7 +41,7 @@
     "build-watch": "microbundle watch --jsx react",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "version-minor": "npm version minor",
+    "version-minor": "npm version minor --force -m \"version %s\"",
     "postversion": "git push && git push --tags && npm publish --access public && echo \"Successfully released version $npm_package_version!\"",
     "clean": "rimraf node_modules dist .rts2*"
   }
