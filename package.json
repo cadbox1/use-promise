@@ -43,7 +43,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "version-minor": "npm version minor --force -m \"version %s\"",
-    "postversion": "git push && git push --tags && yarn npm publish --access public && echo \"Successfully released version $npm_package_version!\"",
+    "postversion": "git push && git push --tags && npm publish --access public && echo \"Successfully released version $npm_package_version!\"",
     "clean": "rimraf node_modules dist .rts2*"
   }
 }
