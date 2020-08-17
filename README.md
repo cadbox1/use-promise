@@ -2,10 +2,6 @@
 
 Use Promise is a React hook that has properties for the state of a promise.
 
-## 🚀 Demo
-
-(link your storybook docs, probably deployed on Netlify here)
-
 ## Getting Started
 
 ```
@@ -76,4 +72,10 @@ Build the package continuously.
 
 ```
 yarn build-watch
+```
+
+Deploy to npm
+
+```
+yarn version-minor
 ```
