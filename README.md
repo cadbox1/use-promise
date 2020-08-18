@@ -1,6 +1,6 @@
 # UsePromise
 
-A React hook makes it easy to handle promise states.
+A React hook that makes it easy to handle the state of promises.
 
 ## 🚀 Demo
 
