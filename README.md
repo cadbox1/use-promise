@@ -4,7 +4,7 @@ A React hook that makes it easy to handle the state of promises.
 
 ## 🚀 Demo
 
-[Storybook demo](https://5f3b8f953e289a3302e79357--sad-wright-af9cca.netlify.app/)
+[Storybook demo](https://use-promise.netlify.app)
 
 
 ## 💻 Getting Started
