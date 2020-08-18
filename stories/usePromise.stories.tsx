@@ -1,13 +1,12 @@
 import React, { useEffect } from "react";
-import { action } from "@storybook/addon-actions";
-import { usePromise } from "./index";
+import { usePromise } from "../src";
 
 export default {
 	title: "UsePromise",
 	component: usePromise,
 };
 
-export const KanyApi = () => {
+export const KanyeApi = () => {
 	const kanyeApi = "https://api.kanye.rest";
 
 	type KanyeApiResponse = {

@@ -2,7 +2,12 @@
 
 Use Promise is a React hook that has properties for the state of a promise.
 
-## Getting Started
+## 🚀 Demo
+
+Storybook demo
+
+
+## 💻 Getting Started
 
 ```
 npm install @cadbox1/use-promise
@@ -36,46 +41,17 @@ const Page = () => {
 }
 ```
 
-See the Demo above for more usage.
-
 ## 🔮 Future Development
 
 - Add a property similar to pending that only shows after about 200ms so short requests are less jerky.
 
-## 💻 Running Locally
+## 🔨 Package Development
 
-Install dependencies first.
+- `yarn`                  Install dependencies
+- `yarn storybook`        Develop in Storybook
+- `yarn test`             Run tests
+- `npm run version-minor` Deploy to npm
+- `yarn clean`            Remove temporary assets
 
-```
-yarn
-```
-
-Running Storybook
-
-```
-yarn storybook
-```
-
-Running tests.
-
-```
-yarn test
-```
-
-Build the package.
-
-```
-yarn build
-```
-
-Build the package continuously.
-
-```
-yarn build-watch
-```
-
-Deploy to npm
-
-```
-npm run version-minor
-```
+## 🔧 Tools
+Package setup with [tsdx](https://github.com/formium/tsdx)

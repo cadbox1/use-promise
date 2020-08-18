@@ -1,15 +1,28 @@
 module.exports = {
-	stories: ["../src/**/*.stories.(js|mdx|tsx)"],
+	stories: ["../stories/**/*.stories.(ts|tsx)"],
 	addons: [
-		"@storybook/preset-create-react-app",
-		{
-			name: "@storybook/addon-docs",
-			options: {
-				configureJSX: true,
-			},
-		},
 		"@storybook/addon-actions",
 		"@storybook/addon-links",
-		"@storybook/addon-viewport/register",
+		"@storybook/addon-docs",
 	],
+	webpackFinal: async (config) => {
+		config.module.rules.push({
+			test: /\.(ts|tsx)$/,
+			use: [
+				{
+					loader: require.resolve("ts-loader"),
+					options: {
+						transpileOnly: true,
+					},
+				},
+				{
+					loader: require.resolve("react-docgen-typescript-loader"),
+				},
+			],
+		});
+
+		config.resolve.extensions.push(".ts", ".tsx");
+
+		return config;
+	},
 };
