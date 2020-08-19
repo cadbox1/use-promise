@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { usePromise } from "../src";
 
 export default {
-	title: "UsePromise",
+	title: "usePromise",
 	component: usePromise,
 };
 
@@ -13,10 +13,10 @@ export const KanyeApi = () => {
 		quote: string;
 	};
 
-	const { value, pending, call } = usePromise<KanyeApiResponse>({
+	const { value, pending, call } = usePromise({
 		promiseFunction: async () => {
 			const response = await fetch(kanyeApi);
-			const json = await response.json();
+			const json: KanyeApiResponse = await response.json();
 			return json;
 		},
 	});
